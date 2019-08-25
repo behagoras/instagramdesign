@@ -208,7 +208,7 @@ figure.storie-image img {
     position: absolute;
     justify-content: center;
     align-items: center;
-    color: wheat;
+    color: white;
     display: none;
 }
 .post:hover .post-overlay{
