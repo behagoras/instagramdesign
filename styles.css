@@ -1,0 +1,235 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    background: #FAFAFA;
+    color: #262626;
+}
+nav{
+    background: white;
+}
+.header-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 1024px;
+    margin: 0 auto;
+}
+figure.logo1 {
+    width: 150px;
+}
+img{
+    width: 100%;
+}
+.search-container{
+    display: grid;
+    justify-content: center;
+}
+.search-box{
+    background: #FAFAFA;
+    width: fit-content;
+    border: solid #dbdbdb 1px;
+    width: 199px;
+    padding: 2px;
+
+}
+.search-box input[type="search"] {
+    border: none;
+    background: no-repeat;
+    font-size: 16px;
+    padding: 3px;
+    width: 72px;
+}
+a:link, a:visited{
+    color: #003569;
+    text-decoration: none;
+}
+a.website {
+    font-weight: bold;
+}   
+.profile{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 30px;
+    justify-content: 30px;
+    max-width: 932px;
+    margin: auto;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+.picture-container{
+    display: grid;
+    justify-content: center;
+    align-items: top;
+    margin: 0;
+}
+.profile-pic{
+    width: 150px;
+    margin: 0;
+}
+.profile-pic img{
+    width: 100%;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.title-bar h1, .follow-section, .more-horiz{
+    float: left;
+    padding-right: 20px;
+    margin: 0;
+}
+ul.engagement-section{
+    padding: 0;
+    margin: 20px 0 ;
+}
+.engagement-section li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+
+}
+h2{
+    margin: 0;
+    padding: 0;
+}
+.material-icons{
+    display: inline;
+    overflow: hidden;
+
+}
+button{
+    font-size: 16px;
+    height: 26px;
+    background: none;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    margin-right: 10px;
+
+}
+.more-horiz{
+    border: none;
+}
+.morearrow-section i{
+    padding-right: 0;
+    padding-left:0;  
+    margin: -7px
+}
+.follow-section{
+    padding: 0;
+    bottom: 0;
+    display: flex;
+    align-items: top;
+}        
+button.following{
+    padding: 0 24px;
+}
+.title-bar{
+    width: 100%;
+    display: block;
+}
+.title-bar h1{
+    font-size: 28px;
+    font-weight: normal;
+}    
+    
+.text-section h2 {
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+p.profile-description {
+    margin: 6px 0;
+    line-height: 1.5;
+}
+.friends-following {
+    margin: 10px 0;
+    font-size: 12px;
+}
+.friends-following a {
+    text-decoration: none;
+}
+a.profile-link {
+    color: #262626;
+}
+a.more-friends {
+    color: #A8A8A8;
+}
+section.stories-section {
+    margin-bottom: 50px;
+}        
+ul.stories-list {
+    width: fit-content;
+    margin: auto;
+    min-width: 1024px;
+}
+li.story {
+    list-style: none;
+    display: inline-grid;
+    margin: 0 auto;
+    text-align: center;
+    width: 130px;
+    height: 130px;
+}
+figure.storie-image img {
+    border-radius: 50%;
+    width: 77px;
+}
+.post-list{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(100px,293px));
+    grid-gap: 28px;
+    justify-content: center;
+}
+.post{
+    cursor: pointer;
+    position: relative;
+    display: block;
+}
+.post-image{
+    margin: 0;
+}
+.post-image img{
+    width: 100%;
+
+    vertical-align: top;
+}
+.post-overlay{
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    display: none;
+}
+.post:hover .post-overlay{
+    display: flex;
+}
+.post-likes, .post-comments{
+    width: 60px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+}
+.engagement-section{
+    width: 100%;
+    float: left;
+}
+section.text-section{
+    float: left;
+}
+@media screen and (max-width: 768px) {
+    .post-list{
+        grid-gap: 3px;
+    }
+}
+
